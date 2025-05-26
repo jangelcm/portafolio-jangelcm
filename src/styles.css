@@ -22,3 +22,10 @@ body{
   --breakpoint-3xl: 120rem;
 
 }
+
+@layer utilities {
+  
+  .text-stroke-white {
+    -webkit-text-stroke: 1px black;
+  }
+}

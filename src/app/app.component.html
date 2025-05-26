@@ -1,7 +1,8 @@
 <div
   [ngClass]="isDark.value? 'dark grid min-h-screen grid-rows-[100px_1fr_60px]':'grid min-h-screen grid-rows-[100px_1fr_60px]'">
   <!-- Header Section -->
-  <header class="flex items-center space-x-4  bg-blue-300 dark:bg-blue-950 dark:border-b-4 dark:border-b-cyan-50">
+  <header
+    class="flex items-center space-x-4  bg-blue-300 dark:bg-blue-950 border-b-4 dark:border-b-4 border-b-white dark:border-b-cyan-50">
     <h1 class="text-white pl-4 text-4xl font-extrabold tracking-wide drop-shadow-lg font-[Comic Sans MS]">
       JACM
     </h1>
@@ -9,12 +10,12 @@
     <label class="inline-flex items-center cursor-pointer">
       <input type="checkbox" [formControl]="isDark" class="sr-only peer">
       <div
-        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-cyan-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-cyan-700">
+        class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-900">
       </div>
     </label>
 
     <button
-      class="ml-auto mr-4 bg-blue-900 text-white border-2 dark:border-cyan-600 dark:bg-cyan-700 hover:bg-white hover:text-black  dark:hover:bg-black dark:hover:text-white px-4 py-3 rounded-3xl cursor-pointer">
+      class="ml-auto mr-4 bg-blue-900 dark:bg-cyan-700 text-white border-2 hover:bg-white hover:text-black  dark:hover:bg-black dark:hover:text-white px-4 py-3 rounded-3xl cursor-pointer">
       <a href="#contacto" class="lg:text-3xl text-2x1">Contactame</a>
     </button>
   </header>
@@ -25,7 +26,7 @@
   <!-- Main Content Section -->
 
   <main
-    class="dark:from-gray-950 dark:via-gray-900 dark:to-blue-950 bg-gradient-to-t  from-blue-50  via-sky-100 to-white xs:px-10 lg:px-40">
+    class="dark:from-gray-950  dark:via-gray-900 dark:to-blue-950 bg-gradient-to-t  from-blue-50  via-sky-100 to-white xs:px-10 lg:px-40">
 
     <!-- <svg class="size-6 animate-bounce w-30 text-white">
       <use xlink:href="flecha.svg" />
@@ -33,10 +34,11 @@
     <section class="container mx-auto pt-20 2xl:grid 2xl:grid-cols-2 2xl:space-x-10 mb-20">
 
       <div class="text-center 2xl:text-start">
-        <h1 class="lg:text-8xl text-6xl text-black text-balance dark:text-cyan-700">
+        <h1 class="lg:text-8xl text-6xl text-balance dark:text-gray-400">
           Hola. Soy <a class="text-blue-300"> José
             Angel</a>,</h1>
-        <h1 class="lg:text-8xl text-6xl text-blue-900 text-balance dark:text-white">Desarrollador web
+        <h1 class="lg:text-8xl text-6xl text-blue-900 text-balance dark:text-white">
+          Desarrollador web
         </h1>
         <div class="flex flex-row 2xl:justify-start justify-center space-x-4 pt-4">
           <p class="text-balance border-r-4 p-2 dark:text-gray-400 text-2xl">Engineer System</p>
@@ -280,7 +282,7 @@
               recursos de empleados en
               una empresa.
             </p>
-            <a href="#" class="mt-auto text-blue-600 hover:underline font-medium">Ver más</a>
+            <a href="#" class="mt-auto text-blue-600 dark:text-cyan-700 hover:underline font-medium">Ver más</a>
           </div>
 
           <!-- Repetir según sea necesario -->
@@ -289,7 +291,7 @@
             <p class="text-sm text-gray-400 dark:text-gray-300 mb-4">Aplicación web para el control de un hospital de
               España.
             </p>
-            <a href="#" class="mt-auto text-blue-600 hover:underline font-medium">Ver más</a>
+            <a href="#" class="mt-auto text-blue-600 dark:text-cyan-700 hover:underline font-medium">Ver más</a>
           </div>
 
           <div class="bg-white dark:text-gray-400 dark:bg-gray-800  rounded-2xl shadow p-6 flex flex-col">
@@ -299,7 +301,7 @@
               de
               transportes en Castilla la Mancha - España
             </p>
-            <a href="#" class="mt-auto text-blue-600 hover:underline font-medium">Ver más</a>
+            <a href="#" class="mt-auto text-blue-600 dark:text-cyan-700 hover:underline font-medium">Ver más</a>
           </div>
 
           <div class="bg-white dark:text-gray-400 dark:bg-gray-800   rounded-2xl shadow p-6 flex flex-col">
@@ -309,7 +311,7 @@
               control de citas
               podologicas en la clinica podológica Diale.
             </p>
-            <a href="#" class="mt-auto text-blue-600 hover:underline font-medium">Ver más</a>
+            <a href="#" class="mt-auto text-blue-600 dark:text-cyan-700 hover:underline font-medium">Ver más</a>
           </div>
         </div>
       </div>
