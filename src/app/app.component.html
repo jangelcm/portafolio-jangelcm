@@ -1,5 +1,5 @@
 <div
-  [ngClass]="isDark.value? 'dark grid min-h-screen grid-rows-[100px_1fr_40px]':'grid min-h-screen grid-rows-[100px_1fr_40px]'">
+  [ngClass]="isDark.value? 'dark grid min-h-screen grid-rows-[100px_1fr_60px]':'grid min-h-screen grid-rows-[100px_1fr_60px]'">
   <!-- Header Section -->
   <header class="flex items-center space-x-4  bg-blue-300 dark:bg-blue-950 dark:border-b-4 dark:border-b-cyan-50">
     <h1 class="text-white pl-4 text-4xl font-extrabold tracking-wide drop-shadow-lg font-[Comic Sans MS]">
@@ -9,12 +9,12 @@
     <label class="inline-flex items-center cursor-pointer">
       <input type="checkbox" [formControl]="isDark" class="sr-only peer">
       <div
-        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600">
+        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-cyan-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-cyan-700">
       </div>
     </label>
 
     <button
-      class="ml-auto mr-4 bg-blue-900 text-white border-2 hover:bg-white hover:text-black dark:bg-blue-900 dark:hover:bg-black dark:hover:text-white px-4 py-3 rounded-3xl cursor-pointer">
+      class="ml-auto mr-4 bg-blue-900 text-white border-2 dark:border-cyan-600 dark:bg-cyan-700 hover:bg-white hover:text-black  dark:hover:bg-black dark:hover:text-white px-4 py-3 rounded-3xl cursor-pointer">
       <a href="#contacto" class="lg:text-3xl text-2x1">Contactame</a>
     </button>
   </header>
@@ -30,13 +30,14 @@
     <!-- <svg class="size-6 animate-bounce w-30 text-white">
       <use xlink:href="flecha.svg" />
     </svg> -->
-    <section class="container mx-auto pt-20 2xl:grid 2xl:grid-cols-2 2xl:space-x-10">
+    <section class="container mx-auto pt-20 2xl:grid 2xl:grid-cols-2 2xl:space-x-10 mb-20">
 
-      <div class="xs:text-center md:text-center 2xl:text-start">
-        <h1 class="lg:text-8xl text-6xl  text-black  dark:text-blue-900 bg-center  text-balance">
+      <div class="text-center 2xl:text-start">
+        <h1 class="lg:text-8xl text-6xl text-black text-balance dark:text-cyan-700">
           Hola. Soy <a class="text-blue-300"> José
             Angel</a>,</h1>
-        <h1 class="lg:text-8xl text-6xl text-blue-900 dark:text-white bg-center text-balance">Desarrollador web</h1>
+        <h1 class="lg:text-8xl text-6xl text-blue-900 text-balance dark:text-white">Desarrollador web
+        </h1>
         <div class="flex flex-row 2xl:justify-start justify-center space-x-4 pt-4">
           <p class="text-balance border-r-4 p-2 dark:text-gray-400 text-2xl">Engineer System</p>
           <p class="text-balance border-r-4 p-2 dark:text-gray-400 text-2xl">
@@ -66,7 +67,7 @@
       </div>
     </section>
 
-    <section class="container mx-auto border-t-4 border-r-blue-900 dark:border-t-cyan-50 py-12 px-4 mb-20">
+    <section class="container mx-auto border-t-4 border-r-blue-900 dark:border-t-cyan-50 mb-20">
       <div>
         <h2 class="text-3xl font-bold mb-8 mt-8 text-center text-blue-300 inline-block relative">Tecnologías que
           manejo
@@ -74,7 +75,7 @@
         </h2>
 
         <div>
-          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 font-black">
+          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 dark:text-cyan-700 font-black">
             Front-end</h3>
 
           <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -139,7 +140,7 @@
         </div>
 
         <div>
-          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 font-black">Backend</h3>
+          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 dark:text-cyan-700 font-black">Backend</h3>
 
           <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-6">
             <section class="bg-white dark:text-gray-400 dark:bg-gray-800   rounded-2xl shadow p-4 text-center">
@@ -192,7 +193,7 @@
         </div>
 
         <div>
-          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 font-black">Gestores de base
+          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 dark:text-cyan-700 font-black">Gestores de base
             de
             datos</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -233,7 +234,7 @@
         </div>
 
         <div>
-          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 font-black">Controladores de
+          <h3 class="text-2xl mb-8 mt-8 text-start text-gray-500 dark:text-cyan-700 font-black">Controladores de
             versiones</h3>
           <h3 class="text-2xl  mb-8 mt-8 text-start text-black dark:text-blue-900 font-black underline">
           </h3>
@@ -266,7 +267,7 @@
     </section>
 
     <!-- Sección de Proyectos -->
-    <section class="container mx-auto  border-t-4 border-r-blue-900 dark:border-t-cyan-50 py-12 px-4 mb-20">
+    <section class="container mx-auto  border-t-4 border-r-blue-900 dark:border-t-cyan-50 mb-20">
       <div>
         <h2 class="text-3xl font-bold mb-8 mt-8 text-center text-blue-300 inline-block relative">Proyectos
           <span class="block h-1 w-full mt-1 bg-gradient-to-r from-blue-300 to-blue-900 rounded-full"></span>
@@ -367,12 +368,8 @@
 
 
   <!-- Footer Section -->
-  <footer class="flex justify-end bg-blue-200 pr-8">
-    <nav class="flex space-x-4">
-      <a routerLink="/home" class="text-white">Home</a>
-      <!-- <a routerLink="/about" class="text-white">About</a>
-      <a routerLink="/contact" class="text-white">Contact</a> -->
-    </nav>
+  <footer class="bg-blue-200 text-center place-content-center border-t">
+    <p>&copy; 2025 | José Angel Chavez. Todos los derechos reservados.</p>
   </footer>
 
 </div>
