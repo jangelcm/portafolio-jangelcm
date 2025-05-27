@@ -4,7 +4,9 @@
 body{
   font-family: --font-sans;
 }
+
 @custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
 
     /*tipografias*/
@@ -17,15 +19,5 @@ body{
 
   /**/
 
-  --breakpoint-xs: 20rem;
-  --breakpoint-2xl: 100rem;
-  --breakpoint-3xl: 120rem;
-
 }
 
-@layer utilities {
-  
-  .text-stroke-white {
-    -webkit-text-stroke: 1px black;
-  }
-}
