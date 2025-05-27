@@ -1,8 +1,6 @@
-<div [ngClass]="
-    isDark.value
-      ? 'dark grid min-h-screen grid-rows-[100px_1fr_60px] bg-cover bg-center'
-      : 'grid min-h-screen grid-rows-[100px_1fr_60px] bg-cover bg-center'
-  " [style.backgroundImage]="'url(/fondo-portafolio.jpg)'"> <!-- Header Section -->
+<div
+  [ngClass]="isDark.value? 'dark grid min-h-screen grid-rows-[100px_1fr_60px]':'grid min-h-screen grid-rows-[100px_1fr_60px]'">
+  <!-- Header Section -->
   <header
     class="flex items-center space-x-4  bg-blue-300 dark:bg-blue-950 border-b-4 dark:border-b-4 border-b-white dark:border-b-cyan-50">
     <h1 class="text-white pl-4 text-4xl font-extrabold tracking-wide drop-shadow-lg font-[Comic Sans MS]">
@@ -28,12 +26,12 @@
   <!-- Main Content Section -->
 
   <main
-    class="container mx-auto dark:from-gray-950  dark:via-gray-900 dark:to-blue-950 bg-gradient-to-t  from-blue-50  via-sky-100 to-white pl-10 pr-10 lg:pl-40 lg:pr-40">
+    class="dark:from-gray-950  dark:via-gray-900 dark:to-blue-950 bg-gradient-to-t  from-blue-50  via-sky-100 to-white xs:px-10 xs:pr-10 lg:pl-40 lg:pr-40">
 
     <!-- <svg class="size-6 animate-bounce w-30 text-white">
       <use xlink:href="flecha.svg" />
     </svg> -->
-    <section class="pt-20 2xl:grid 2xl:grid-cols-2 2xl:space-x-10 mb-20">
+    <!-- <section class="container mx-auto pt-20 2xl:grid 2xl:grid-cols-2 2xl:space-x-10 mb-20">
 
       <div class="text-center 2xl:text-start">
         <h1 class="lg:text-8xl text-5xl text-balance dark:text-gray-400">
@@ -41,7 +39,7 @@
             Angel</a>,</h1>
 
         <h1 class="lg:text-8xl text-5xl text-blue-900 text-balance break-words max-w-full dark:text-white">
-          Desarrolladorrrrrr web
+          Desarrollador web
         </h1>
         <div class="flex flex-row 2xl:justify-start justify-center space-x-4 pt-4">
           <p class="text-balance border-r-4 p-2 dark:text-gray-400 text-2xl">Engineer System</p>
@@ -70,9 +68,9 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="border-t-4 border-r-blue-900 dark:border-t-cyan-50 mb-20">
+    <section class="container mx-auto border-t-4 border-r-blue-900 dark:border-t-cyan-50 mb-20">
       <div>
         <h2 class="text-3xl font-bold mb-8 mt-8 text-center text-blue-300 inline-block relative">Tecnologías que
           manejo
@@ -272,7 +270,7 @@
     </section>
 
     <!-- Sección de Proyectos -->
-    <section class="border-t-4 border-r-blue-900 dark:border-t-cyan-50 mb-20">
+    <section class="container mx-auto  border-t-4 border-r-blue-900 dark:border-t-cyan-50 mb-20">
       <div>
         <h2 class="text-3xl font-bold mb-8 mt-8 text-center text-blue-300 inline-block relative">Proyectos
           <span class="block h-1 w-full mt-1 bg-gradient-to-r from-blue-300 to-blue-900 rounded-full"></span>
@@ -319,7 +317,8 @@
         </div>
       </div>
     </section>
-    <section class="border-t-4 border-r-blue-900 dark:border-t-cyan-50 py-12 mb-20" id="contacto">
+    <section class="container mx-auto  border-t-4 border-r-blue-900 dark:border-t-cyan-50 py-12 px-4 mb-20"
+      id="contacto">
       <h2 class="text-3xl font-bold text-center mb-8 text-blue-300">Contáctame</h2>
 
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()"
